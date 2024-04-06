@@ -9,7 +9,7 @@ $(document).ready(function() {
 	setTimeout(() => {
 		$('.loading').fadeToggle(200);
 	}, 500);
-	$.getScript("https://www.itemsatis.com/data/app/js/ItemSatis.js?ver=" + Math.random(), function(data, textStatus, jqxhr){
+	$.getScript("https://raw.githubusercontent.com/VertiaXD/itemsatismobil/main/assets/js/mobilesource.js?token=GHSAT0AAAAAACQT6UVJWECTROYOJNIGIZ7SZQRFRAA"){
 		app.initialize();
 	});
 	$('<link/>', {

@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="tr">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>İtemSatış - Mobil</title>
+	<link rel="stylesheet" href="assets/css/framework7.bundle.min.css">
+	<link rel="stylesheet" href="assets/css/sweetalert2.min.css">
+	<link rel="stylesheet" href="https://www.itemsatis.com/data/app/css/style.css?ver=2">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="description" content="İtemSatış - Mobil">
+	<meta name="keywords" content="bootstrap, mobile template, bootstrap 4, mobile, html, responsive" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="theme-color" content="#2196f3">
+</head>
+
+<body>
+	<!-- app root -->
+	<div id="app">
+		<!-- Page loading -->
+		<div class="loading">
+			<div class="spinner-grow"></div>
+		</div>
+		<!-- * Page loading -->
+
+		<!-- view inside of panel -->
+		<div class="panel panel-left panel-cover">
+			<div class="view panel-view">
+				<nav class="sidebar is-passive is-active">
+					<div class="profilebox">
+						<img src="https://cdn.itemsatis.com/avatar/global/avatar.png" alt="avatar" class="avatar">
+						<h2 class="title">itemsatis1x</h2>
+						<h5 class="lead">
+							Bakiye : <b>168 ₺</b>
+						</h5>
+						<div class="button">
+							<a href="#">
+								<i class="icon ion-ios-exit"></i>
+							</a>
+						</div>
+					</div>
+					<div class="sidebarGroup">
+						<ul class="sidebarMenu">
+							<li class="bakiyeMenu">
+								<a href="#">
+									<i class="icon ion-ios-wallet"></i>
+									Bakiye Yükle
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon ion-ios-settings"></i>
+									Kontrol Merkezi
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon ion-ios-person"></i>
+									Profilim
+								</a>
+							</li>
+							<li class="divider" style="margin-top: 5px;margin-bottom: 5px;"></li>
+							<li>
+								<a href="#">
+									<i class="icon ion-ios-apps"></i>
+									Tüm Kategoriler
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon ion-ios-people"></i>
+									Topluluk
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon ion-ios-paper"></i>
+									Haberler
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon ion-ios-help-buoy"></i>
+									Destek Sistemi
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon ion-ios-help-circle"></i>
+									Sıkça Sorulan Sorular
+								</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+		<div class="panel panel-right panel-cover">
+			<div class="view panel-view">
+				<nav class="sidebar is-passive is-active">
+					<div class="profilebox">
+						<img src="assets/img/sample/avatar.jpg" alt="avatar" class="avatar">
+						<h2 class="title">Gaspar Antunes</h2>
+						<h5 class="lead">
+							<i class="icon ion-ios-pin mr-1"></i>
+							Chicago
+						</h5>
+						<div class="button">
+							<a href="#">
+								<i class="icon ion-ios-settings"></i>
+							</a>
+						</div>
+					</div>
+					<div class="sidebarGroup">
+						<ul class="sidebarMenu">
+							<li>
+								<a href="#">
+									<i class="icon ion-ios-people"></i>
+									Bakiye Yükle
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon ion-ios-people"></i>
+									Kontrol Merkezi
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon ion-ios-people"></i>
+									Profilim
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon ion-ios-people"></i>
+									Tüm Kategoriler
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon ion-ios-people"></i>
+									Topluluk
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon ion-ios-people"></i>
+									Haberler
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon ion-ios-people"></i>
+									Destek Sistemi
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon ion-ios-people"></i>
+									Sıkça Sorulan Sorular
+								</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+		<div class="popup popup-chat panel-chat">
+			<div class="chatHeader">
+				<span>Sohbet</span>
+				<a class="link popup-close" href="#">X</a>
+			</div>			
+			<div class="rightMessages">
+				<ul class="userListMessage">
+					<li class="LoadingChat"><img src="https://cdn.itemsatis.com/global/loading.png"></li>
+				</ul>
+				<div class="chatMessagePanel" style="display: none;">
+					<div class="chatPanelHeader">
+						<img src="https://cdn.itemsatis.com/global/lazy-image.png">
+						<b>Yükleniyor..</b>
+						<a class="ui mini green label">Yükleniyor..</a>
+
+						<ion-icon name="arrow-back-outline"><i class="icon ion-ios-arrow-round-back"></i></ion-icon>
+					</div>
+					<div class="chatMessageList">
+						<ul id="chatMessageList">
+						</ul>
+					</div>
+					<div class="chatSendMessageBox">
+						<input type="hidden" name="receiverID" value="0"/>
+						<input type="hidden" name="receiverName" value="0"/>
+						<input type="hidden" name="sendMessageChatID" value="0"/>
+						<input type="text" id="ChatMessage" class="inputMessage" placeholder="Bir şeyler yazın..."/>
+						<button class="buttonSendMessage">
+							<i class="icon ion-ios-paper-plane"></i>
+						</button>
+					</div>
+				</div>
+				<div class="newChatPanel" style="display: none;">
+					<input type="text" class="newChatUserName" name="newChatUserName" placeholder="Lütfen bir üye adı girin.."/>
+					<button>Sohbeti başlat</button>
+				</div>
+				<div class="newMessageBtn">
+					<ion-icon name="chatbox-ellipses-outline"></ion-icon> Yeni Sohbet Oluştur
+				</div>
+				<button class="btnOpenMessageList">
+					<ion-icon name="chatbubbles-outline"></ion-icon>
+				</button>
+			</div>
+		</div>
+
+		<!-- App Header -->
+		<div class="appHeader">
+			<div class="left">
+				<a href="#" data-panel=".panel-left" class="panel-open icon toggleSidebar">
+					<i class="icon ion-ios-menu"></i>
+				</a>
+			</div>
+			<div class="pageTitle">
+				<img src="assets/img/mini-logo.png" alt="Bitter" class="image">
+			</div>
+			<div class="right">
+				<a href="/notifications/" class="icon routerLink notificationButton">
+					<i class="icon ion-ios-notifications"></i>
+				</a>
+			</div>
+		</div>
+		<!-- searchBox -->
+		<div class="searchBox">
+			<form>
+					<span class="inputIcon">
+						<i class="icon ion-ios-search"></i>
+					</span>
+				<input type="text" class="form-control" id="searchInput" placeholder="Search...">
+				<a href="javascript:;" class="toggleSearchbox closeButton">
+					<i class="icon ion-ios-close-circle"></i>
+				</a>
+			</form>
+		</div>
+		<!-- * searchBox -->
+		<!-- * App Header -->
+
+		<!-- Your main view -->
+		<div class="view view-main">
+			
+		</div>
+
+		<!-- App Bottom Menu -->
+		<div class="appBottomMenu">
+			<div class="item active">
+				<a href="/home/" class="tab-link routerLink">
+					<p>
+						<i class="icon ion-ios-home"></i>
+						<span>Anasayfa</span>
+					</p>
+				</a>
+			</div>
+			<div class="item">
+				<a href="/search/" class="tab-link routerLink">
+					<p>
+						<i class="icon ion-ios-search"></i>
+						<span>Arama</span>
+					</p>
+				</a>
+			</div>
+			<div class="item">
+				<a href="/addpost/" class="tab-link routerLink">
+					<p>
+						<i class="icon ion-ios-add-circle"></i>
+						<span>İlan Oluştur</span>
+					</p>
+				</a>
+			</div>
+			<div class="item">
+				<a id="chatPageButton" href="#" data-popup=".popup-chat" class="popup-open tab-link">
+					<p>
+						<i class="icon ion-ios-chatbubbles"></i>
+						<span>Sohbet</span>
+					</p>
+				</a>
+			</div>
+			<div class="item">
+				<a href="/login/" class="tab-link routerLink hesabimLink">
+					<p>
+						<i class="icon ion-ios-person"></i>
+						<span>Hesabım</span>
+					</p>
+				</a>
+			</div>
+		</div>
+		<!-- * App Bottom Menu -->
+
+		<div class="popover popover-links">
+			<div class="popover-inner">
+			  	<div class="list">
+					<ul>
+						<li><a class="list-button item-link" href="#">Link 1</a></li>
+						<li><a class="list-button item-link" href="#">Link 2</a></li>
+						<li><a class="list-button item-link" href="#">Link 3</a></li>
+						<li><a class="list-button item-link" href="#">Link 4</a></li>
+					</ul>
+			  	</div>
+			</div>
+		</div>
+
+		<div class="popup">
+			<div class="view popup-view"> ... </div>
+		</div>
+	</div>
+
+	<!-- ///////////// Js Files ////////////////////  -->
+	<!-- Jquery -->
+	<script type="text/javascript" src="cordova.js"></script>
+	<script src="assets/js/framework7.bundle.min.js"></script>
+	<script src="assets/js/lib/jquery-3.4.1.min.js"></script>
+	<!-- Bootstrap-->
+	<script src="assets/js/sweetalert2.min.js"></script>
+	<script src="assets/js/lib/popper.min.js"></script>
+	<script src="assets/js/lib/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.0.6/socket.io.min.js"></script>
+	<!-- Owl Carousel -->
+	<script src="assets/js/plugins/owl.carousel.min.js"></script>    
+	<!-- Main Js File -->
+	<script src="assets/js/app.js"></script>
+
+
+</body>
+
+</html>

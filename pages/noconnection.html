@@ -1,0 +1,57 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Bitter Mobile Template</title>
+	<link rel="stylesheet" href="../assets/css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="description" content="Bitter Mobile Template">
+	<meta name="keywords" content="bootstrap, mobile template, bootstrap 4, mobile, html, responsive" />
+</head>
+
+<body>
+	<div class="loading">
+		<div class="spinner-grow"></div>
+	</div>
+	
+	<div id="appCapsule">
+
+		<div class="appContent">
+
+			<div class="splashBlock">
+				<div class="mb-3 mt-3">
+					<img src="../assets/img/hugo-no-connection.png" alt="draw" class="img-fluid">
+				</div>
+
+				<div class="sectionTitle text-center">
+					<div class="title">
+						<h1>Üzgünüz,<br>İnternet bağlantınız yok!</h1>
+					</div>
+					<div class="lead">Gerçek verileri sizlere anlık olarak gösterebilmemiz için internet bağlantınız olması gerekmektedir.</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Jquery -->
+	<script src="../assets/js/lib/jquery-3.4.1.min.js"></script>
+	<!-- Bootstrap-->
+	<script src="../assets/js/lib/popper.min.js"></script>
+	<script src="../assets/js/lib/bootstrap.min.js"></script>
+	<!-- Owl Carousel -->
+	<script src="../assets/js/plugins/owl.carousel.min.js"></script>
+	<script>
+		$(document).ready(function() {			
+			setTimeout(() => {
+				$('.loading').fadeToggle(200);
+			}, 500);
+		});
+	</script>
+
+
+</body>
+
+</html>

@@ -188,12 +188,6 @@ var myApp = new Framework7({
 
 		},
 		pageInit: function (page) {
-
-			myApp.dialog.alert("Mobil uygulamamÄ±z yeni versiyonu ile Ã§ok yakÄ±nda sizlerle olacak.", "Ä°temSatÄ±ÅŸ", function(){
-				window.location.href = "https://www.itemsatis.com";
-				window.navigator.app.exitApp();
-			});
-
 			leftPanel.close();
 
 			if (device.platform == "iOS") {
